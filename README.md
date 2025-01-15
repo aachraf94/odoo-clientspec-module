@@ -6,8 +6,7 @@ This module extends Odoo functionality to manage a specific category of clients 
 ## Features
 - Custom client specification management
 - Requirements tracking
-- Integration with Odoo projects
-- Management of wholesale clients and their orders
+- Management of wholesale clients and their commands and assurances
 
 ## Installation
 1. Create a subdirectory named `clientspec` in the Odoo addons directory.
