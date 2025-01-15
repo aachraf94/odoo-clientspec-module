@@ -8,8 +8,6 @@
             <sheet>
                <group>
                   <field name="name" />
-                  <field isLocal="Is a local Client"/>
-                  <field 
                </group>
             </sheet>
          </form>
