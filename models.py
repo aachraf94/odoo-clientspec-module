@@ -12,10 +12,10 @@ class Client(models.Model):
 
     name = fields.Char(string="Nom_Client", required=True)    
     
+    isLocal = fields.Boolean(string="Client local")
+    client_type = fields.Selection([("particulier", "Particulier"), ("public", "Une entreprise publique"), ("private", "Une entreprise privée")], string="Type Client")
     commande_ids = fields.One2many(
         'clientspec.commande', 'client_id', string="Commandes")
-    isLocal = fields.Boolean(string="Client local")
-    client_type = fields.Selection(["particulier", "une entreprise publique", "une entreprise privée"])
 
 class Commande(models.Model):
     _name = 'clientspec.commande'

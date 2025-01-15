@@ -8,8 +8,8 @@
                 <sheet>
                     <group>
                         <field name="name" />
-                        <field name="isLocal" />
-                        <field name="client_type" />
+                        <!-- <field name="isLocal" />
+                        <field name="client_type" /> -->
                     </group>
                 </sheet>
             </form>
@@ -24,8 +24,8 @@
         <field name="arch" type="xml">
             <tree string="client Tree">
                 <field name="name" />
-                <field name="isLocal" />
-                <field name="client_type" />
+                <!-- <field name="isLocal" />
+                <field name="client_type" /> -->
             </tree>
         </field>
     </record>
