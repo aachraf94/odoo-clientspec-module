@@ -14,6 +14,8 @@ class Client(models.Model):
     
     commande_ids = fields.One2many(
         'clientspec.commande', 'client_id', string="Commandes")
+    isLocal = fields.Boolean(string="Client local")
+    typeClient = fields.Selection(["particulier", "une entreprise publique", "une entreprise privée"])
 
 class Commande(models.Model):
     _name = 'clientspec.commande'
@@ -22,7 +24,7 @@ class Commande(models.Model):
     name = fields.Char(string="IdCommande", required=True)
     date = fields.Date()
     price = fields.Float(digits=(6, 2), help="le prix")    
-    client_id = fields.Many2one('clientspec.client',
+    client_id = fields.Many2many('clientspec.client',
         ondelete='cascade', string="Client", required=True)
 
 class Assurance(models.Model):
