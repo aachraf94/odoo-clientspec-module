@@ -12,7 +12,7 @@ class Client(models.Model):
 
     name = fields.Char(string="Nom_Client", required=True)    
     
-    isLocal = fields.Boolean(string="Client local")
+    isLocal = fields.Boolean(string="Client local", required=True)
     client_type = fields.Selection([("particulier", "Particulier"), ("public", "Une entreprise publique"), ("private", "Une entreprise privée")], string="Type Client")
     commande_ids = fields.One2many(
         'clientspec.commande', 'client_id', string="Commandes")
@@ -34,6 +34,6 @@ class Assurance(models.Model):
     label = fields.Char(string="IdAssurance", required=True)
     dateSouscription = fields.Date()
     piece = fields.Binary()    
-    client_id = fields.Many2one('clientspec.client',
+    client_id = fields.Many2many('clientspec.client',
         ondelete='cascade', string="Client", required=True)
 
