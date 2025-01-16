@@ -128,7 +128,7 @@
                      <field name="client_id" />
                   </group>
                   <group string="Assurance">
-                     <field name="date Souscription" />
+                     <field name="dateSouscription" String="date Souscription" />
                      <field name="piece" />
                   </group>
                </group>
