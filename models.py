@@ -37,3 +37,22 @@ class Assurance(models.Model):
     client_id = fields.Many2many('clientspec.client',
         ondelete='cascade', string="Client", required=True)
 
+
+
+# # one2one relation
+# from odoo import models, fields
+
+# class ModelA(models.Model):
+#     _name = 'model.a'
+#     _description = 'Model A'
+
+#     name = fields.Char(string='Name')
+#     model_b_id = fields.Many2one('model.b', string='Model B', ondelete='cascade', unique=True)
+
+# class ModelB(models.Model):
+#     _name = 'model.b'
+#     _description = 'Model B'
+
+#     name = fields.Char(string='Name')
+#     model_a_id = fields.One2many('model.a', 'model_b_id', string='Model A')
+
