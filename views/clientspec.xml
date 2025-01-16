@@ -126,10 +126,9 @@
                     <group string="General">
                      <field name="label" />
                      <field name="client_id" />
-                     <field name="label" />
                   </group>
                   <group string="Assurance">
-                     <field name="dateSouscription" />
+                     <field name="date Souscription" />
                      <field name="piece" />
                   </group>
                </group>
