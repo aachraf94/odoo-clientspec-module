@@ -15,7 +15,7 @@ This module extends Odoo functionality to manage a specific category of clients 
 4. Install the module through the Odoo interface.
 
 ## Dependencies
-- Odoo 14.0+
+- Odoo 17.0+
 
 ## Configuration
 Basic configuration can be done through the Odoo settings menu after installation.
@@ -25,6 +25,3 @@ Refer to the user manual for detailed instructions on using this module.
 
 ## Support
 For issues and support, please create an issue in the repository.
-
-## License
-LGPL-3.0
